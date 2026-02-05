@@ -1,0 +1,55 @@
+nav {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: #f2f6ff !important;
+    margin: 10px 10px 0 10px; /* نفس margin بتاع .hero */
+    border-bottom: 2px solid #83c0ec68;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    transition: all 0.4s;
+}
+.logo:hover {
+    transform: scale3d(1.1,1.1,1.1) rotate(9deg);
+}
+nav .navbar-nav li a {
+    transition: var(--main-transition);
+    cursor: pointer;
+    border-radius: 10px;
+}
+nav .navbar-nav li a:hover  {
+    background-color: var(--special-color) !important;
+    color: #fff !important;
+}
+#thelist li {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    /* background-color: var(--special-color); */
+    color: var(--special-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+#thelist li i, #thelist li .image {
+    font-size: 20px;
+}
+#thelist li:hover {
+    transform: scale3d(1.2,1.2,1.2) rotate(18deg);
+}
+i, .the-nav {
+    color: var(--special-color); 
+}
+@media(max-width:992px) {
+    #thelist {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    .navbar-nav .nav-link {
+        padding-left: 5px;
+    }
+}

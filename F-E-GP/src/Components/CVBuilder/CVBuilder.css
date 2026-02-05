@@ -1,0 +1,6 @@
+.cvbuilder {
+    background-color: #f2f6ff !important;
+    padding: 20px;
+    width: calc(100% + 4px);
+    transform: translateX(-2px);
+}

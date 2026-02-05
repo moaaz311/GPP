@@ -1,0 +1,36 @@
+
+.hero .info .input-data {
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid var(--special-color-1);
+    width: 50%;
+}
+.hero .info .inf_btn {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero .info .inf_btn #link-to-register {
+    border: none !important;
+    background-color: none;
+    font-size: 14px;
+    color: #afb2ba;
+}
+.hero .info .inf_btn #link-to-register:hover {
+    color: var(--special-color);
+}
+.hero .info .inf_btn #link-to-register::before, .hero .info .inf_btn #link-to-register::after {
+    display: none !important;
+}
+.type #company,.type #employee, .type .employee label, .type .company label{
+    cursor: pointer;
+}
+@media (max-width:992px) {
+    .hero .info .inf, .hero .info .inf_btn, .hero .info .input-data{
+        width: 100% !important;
+    }
+    .hero .info .inf p {
+        text-align: center !important;
+    }
+}

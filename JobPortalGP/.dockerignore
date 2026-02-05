@@ -1,0 +1,12 @@
+**/bin/
+**/obj/
+.git/
+.gitignore
+README.md
+Dockerfile
+.dockerignore
+**/.vs/
+**/.vscode/
+**/TestResults/
+**/logs/
+UpgradeLog

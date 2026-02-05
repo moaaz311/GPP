@@ -1,0 +1,121 @@
+.hero {
+    background-color: #f2f6ff !important;
+    padding: 20px;
+    width: calc(100% + 4px);
+    transform: translateX(-2px);
+}
+.hero .image {
+    width: 50% !important;
+}
+
+.hero .move img {
+    animation: move 3s infinite linear;
+}
+@keyframes move {
+    0%,100% {
+        transform: translateY(-10%);
+    }
+    50% {
+        transform: translateY(10%);
+    }
+}
+.hero  .info .special-paragraph {
+    font-size: 15px;
+    cursor:auto;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--special-color-1);
+}
+.hero a {
+    border: 2px solid var(--special-color-1);
+    padding: 10px 20px;
+    font-size: 17px;
+    color: var(--special-color-1);
+    transition: var(--main-transition);
+    position: relative;
+}
+.hero a::before, .hero a::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    height: 100%;
+    width: 0;
+    background-color: var(--special-color-1);
+    transition: var(--main-transition);
+    z-index: -1;
+}
+.hero a::before{
+    left: -1%;
+}
+.hero a::after{
+    right: -1%;
+}
+.hero a:hover {
+    color: #fff;
+}
+.hero a:hover::before,  .hero a:hover::after{
+    width: 52%;
+}
+@media (max-width:992px) {
+    .hero .image {
+        width: 100% !important;
+    }
+    .hero .move {
+        transform: translateX(-5%);
+    }
+}
+.service {
+    background-color: #f2f6ff;
+}
+/*  properties */
+.theproperties {
+    background-color: #f2f6ff;
+    padding: 20px;
+}
+.properties {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    justify-content: center;
+    overflow: hidden;
+}
+.properties .property {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+    padding: 20px 0;
+    height: 250px;
+    background-color: #fff;
+    transition: var(--main-transition);
+    cursor: pointer;
+}
+.properties .property:hover {
+    transform: scale3d(1.1,1.1,1.1);
+}
+.properties .property i{
+    font-size: 36px;
+    color: var(--special-color-1);
+}
+.properties .property .proper {
+    position: relative;
+}
+.properties .property .proper i:first-child {
+    color: rgba(255, 0, 0, 0.297);
+    font-weight: 100;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.properties .property .inf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.properties .property .inf p {
+    width: 90%;
+    height: 60px;
+}

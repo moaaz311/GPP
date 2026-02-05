@@ -1,0 +1,18 @@
+.all-jobs {
+    background-color: #f2f6ff !important;
+    padding: 20px;
+    width: calc(100% + 4px);
+    transform: translateX(-2px);
+}
+.hide {
+    display: none !important;
+}
+.show {
+    display: block !important;
+}
+.all-jobs .thespinner {
+    margin: 10px 0;
+}
+.all-jobs .thespinner  svg{
+    font-size: 30px;
+}

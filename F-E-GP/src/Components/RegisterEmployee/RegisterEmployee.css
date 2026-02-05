@@ -1,0 +1,65 @@
+
+.hero .regist-hero {
+    border: 2px solid var(--special-color-1);
+    padding: 10px 20px;
+    font-size: 17px;
+    color: #fff !important;
+    transition: var(--main-transition);
+    position: relative;
+    background-color: transparent;
+}
+.hero .regist-hero svg {
+    color: #fff !important;
+}
+.hero .regist-hero:disabled {
+    color: var(--special-color-1) !important;
+}
+.hero .regist-hero:disabled::before, .hero .regist-hero:disabled::after {
+    width: 0;
+}
+.hero .regist-hero::before, .hero .regist-hero::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    height: 100%;
+    width: 52%;
+    background-color: var(--special-color-1);
+    transition: var(--main-transition);
+    z-index: -1;
+}
+.hero .regist-hero::before{
+    left: -1%;
+}
+.hero .regist-hero::after{
+    right: -1%;
+}
+.hero .regist-hero:hover {
+    color: #fff !important;
+}
+.hero .regist-hero:hover::before,  .hero .regist-hero:hover::after{
+    width: 52%;
+}
+.industry {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.industry button {
+    background-color: #f2f6ff ;
+    color: var(--special-color-1);
+    border: 2px solid var(--special-color-1);
+    transition: var(--main-transition);
+    font-size: 12px;
+    padding: 0;
+}
+.industry button:hover {
+    background-color: var(--special-color-1);
+    color: #fff !important;
+}
+@media (max-width:992px) {
+    .industry {
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+    }
+}

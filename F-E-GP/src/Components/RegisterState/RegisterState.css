@@ -1,0 +1,10 @@
+.stateRegis {
+    width: 20%;
+    text-align: center;
+    overflow: hidden;
+}
+@media (max-width:992px) {
+    .stateRegis {
+        width: 100%;
+    }
+}

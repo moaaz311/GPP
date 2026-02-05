@@ -1,0 +1,23 @@
+.trends {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: center;
+    gap: 10px;
+}
+.trends .trend {
+    cursor: pointer;
+}
+.trends .trend:hover .image {
+    overflow: hidden;
+}
+.trends .trend:hover .image img {
+    transition: var(--main-transition);
+}
+.trends .trend:hover .image img {
+    transform: scale3d(1.1,1.1,1.1) ;
+}
+.trends .trend .inf svg {
+    font-size: 18px;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
